@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<style>
+    :root {
+        --color: blue;
+        --seccolor: rgb(9, 121, 26);
+        /* this is like an global veriable */
+        --defpad: 23px;
+        --defop: 0.4;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        background-color: var(--color);
+        /*this is the variable*/
+    }
+
+    .container {
+        background-color: var(--seccolor);
+    }
+
+    ul li {
+        /* background-color: beige; */
+        list-style: none;
+        padding: var(--defpad);
+        /* this is caused    Home  about   Contact  with gap*/
+        border: 2px solid var(--seccolor);
+        opacity: var(--defop);
+        /*this will hide text like blureee effect*/
+    }
+
+    ul li:first-child {
+        --color: rgb(223, 97, 8);
+        background-color: var(--color, blue);
+        /*if abouve things does not exist then is color will applied */
+    }
+
+
+
+
+    ul {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rerum obcaecati labore consectetur at eum
+        possimus natus beatae a quod.
+    </div>
+</body>
+
+</html>
