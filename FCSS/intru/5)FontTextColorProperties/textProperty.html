@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties</title>
+
+
+ <!--this is other way to import font from the google through link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+
+
+   <style>
+    /* this is one way of getting font through the import */
+       @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    p{   
+        font-family: "Bungee Spice", sans-serif;
+        font-size: 25px;
+        line-height: 4;   
+        /*line height for the gap between lines  */
+    }
+
+    h1{
+        
+        font-family: "Playwrite AU SA", cursive;
+
+        text-align: center;
+
+    }
+
+    h2{
+         text-transform: uppercase;
+       /* capitalize every text */
+       text-decoration: overline;
+       text-decoration-color: aqua;
+       /* overline will get color */
+        
+       /* text-decoration-style: dotted; */
+       /* overline will be dotted line */
+
+       text-decoration-thickness: 7px;
+       /* overline thickness */
+   
+       /* text-indent: 45px; */
+       /* this will add space */
+
+    }
+
+    .lo{
+            border: 2px solid red;
+            width: 45px;
+
+            /* text-overflow: ellipsis;  this will stop text overflowing the box
+            overflow: hidden;         this will hide the over flow */
+
+            word-break:break-all; 
+            /* this will break the word and continue  in next line */
+
+         }
+         
+
+
+
+
+  
+
+
+   </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>this is a video on fonts</p>
+        <p class="lo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate fugiat non!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sellector</title>
+    <style>
+
+
+       /* Element Selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* class sellector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID selector */
+
+       #green{
+        background-color: green;
+       }
+
+       /* Child Selector */
+       div > p{
+        color: blue;
+        background-color: orange;
+       }
+     /* Desendent selector */
+     div  p{
+        color: blue;
+        background-color: rgb(255, 0, 187);
+       }
+    
+       /* univarsel sellector */
+       *{
+          margin: 0;
+          padding: 0;
+       }
+      
+        /* psesudo selector */
+       a:vertical{
+        color: purple;
+        /* it will turn into a purple color after visiting */
+       }
+
+
+        a:link {
+            color: chartreuse;
+        }
+       a:active{
+        /* when the link clicked then this color blink on background */
+          background-color: darkorchid;
+       }
+
+       a:hover{
+        /* when you move around the link yeloow color apper on the background */
+         background-color: yellow;
+       }
+       p:first-child{
+        background-color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div class="red">
+         iam dev
+    </div>
+
+    <div id="green">
+         iam dev 2
+    </div>
+
+    <div class="red2">
+        <p>
+            this is for child selector div
+        </p>
+    </div>
+
+    <div class="red2">
+        <article>
+        <p>
+            this is for Desendent selector div
+        </p>
+    </article>
+        
+    </div>
+
+
+    <div>
+         <a href="https:www.google.com">Go to Google</a>
+    </div>
+
+    <div id="lin">
+         <a href="https:www.facebook.com">Go to facebook</a>
+    </div>
+
+    <main>
+        <p>iam first child</p>
+        <p>iam second child</p>
+    </main>
+</body>
+</html>

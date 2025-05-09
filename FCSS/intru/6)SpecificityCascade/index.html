@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* the  specificity 1*/
+        h1{
+            color: aqua ;   
+            /* color: aqua !important;    */
+            /* this will override everthing */
+        }
+
+        /* the  specificity 1+10=11*/
+        
+        h1.yellow{
+
+            color: yellow;
+
+        }
+
+        /* the  specificity 10*/
+        .cred{
+
+            color: red;
+
+        }
+
+        /* the  specificity 10*/
+        .cpurple{
+
+            color: purple;
+
+        }
+
+        /* the  specificity attribut selector 10*/
+        /* [data-x=a]{
+            background-color: red;
+            color: blue;
+        } */
+        /* } this is attribute sellector
+
+
+
+
+
+        /* Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+         
+       /* specificity is 1+10+10+10+10=41  */
+        a.harryclass.rohan-class[href]:hover {
+/*       1   10        10          10    10  =   41 */
+             color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <h1 style="color: blue;"   class="yellow cred cpurple" data-x="a">CSS Specification</h1> -->
+    </div>
+</body>
+</html>
