@@ -7,50 +7,40 @@
     <title>CSS Variables</title>
 </head>
 <style>
-    :root {
-        --color: blue;
-        --seccolor: rgb(9, 121, 26);
-        /* this is like an global veriable */
-        --defpad: 23px;
-        --defop: 0.4;
-    }
 
-    * {
+    :root{
+        --color:blue;
+        --seccolor:rgb(0, 255, 72);
+        --defop:0.2;
+
+    }
+    .nav{
+        background-color:var(--color);
+    }
+    .container{
+        background-color:var(--seccolor);
+    }
+    *{
         margin: 0;
         padding: 0;
     }
-
-    .nav {
-        background-color: var(--color);
-        /*this is the variable*/
-    }
-
-    .container {
-        background-color: var(--seccolor);
-    }
-
-    ul li {
-        /* background-color: beige; */
-        list-style: none;
-        padding: var(--defpad);
-        /* this is caused    Home  about   Contact  with gap*/
-        border: 2px solid var(--seccolor);
-        opacity: var(--defop);
-        /*this will hide text like blureee effect*/
-    }
-
-    ul li:first-child {
-        --color: rgb(223, 97, 8);
-        background-color: var(--color, blue);
-        /*if abouve things does not exist then is color will applied */
-    }
-
-
-
-
-    ul {
+ ul{
         display: flex;
+        /* this will make elements Horizontal*/
     }
+    ul li{
+        opacity:var(--defop);/*this will give blurr effect*/
+        list-style: none;
+        padding: 34px;
+        border: 2px solid black;
+        margin: 20px;
+    }
+   ul li:first-child{
+    --color:pink;
+    background-color: var(--color,orange);/*is variable not found*/
+   }
+   
+
 </style>
 
 <body>
