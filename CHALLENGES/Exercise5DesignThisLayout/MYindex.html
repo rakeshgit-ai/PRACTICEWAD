@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the layout</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        nav {
+
+            background-color: pink;
+            height: 50px;
+        }
+
+        main {
+            background-color: green;
+            height: 50vh;
+            margin: 10px 20px;
+            /* display: flex;              Enable flexbox */
+            /* Center horizontally */
+            align-items: center;
+        }
+
+        .main1 {
+            padding: 150px;
+            margin-top: 25px;
+            /* height: 200px;
+            width:150px; */
+            background-color: plum;
+            /* display:inline-block; */
+        }
+
+        .mainBox {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+        }
+
+        .content {
+            padding: 70px 200px;
+            border: solid white;
+            margin: 50px;
+            border-radius: 30px;
+
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* Makes it round */
+            background-color: red;
+            padding: 0;
+            /* Remove padding for perfect circle */
+            display: inline-block;
+            position: sticky;
+            /* Makes it sticky */
+            top: 30px;
+            /* Distance from top when sticky */
+            left: 0;
+        }
+
+        footer {}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <div class="mainBox">
+            <div class="main1"></div>
+            <div class="main1"></div>
+        </div>
+
+        <div class="content"></div>
+        <div class="image"></div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

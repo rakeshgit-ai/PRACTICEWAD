@@ -3,55 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design this Card</title>
+    <title>DigitalCard</title>
     <style>
-        #card{
-            height: 500px;
-            width: 300px;
-            background-color: aliceblue;
+        body{
+            background-color: gray;
+        }
+        .card{
+              background-color: white;
+              height: 374px;
+              width: 244px;
+              border-radius: 10px;
+
+        }
+        .img{
+            padding:5px;
             
         }
         img{
-          /* padding: 5px; */
-          text-align: center;
-          padding: 5px;
-          position: relative;
-
-        }
-        .b1{
-            background-color: aquamarine;
-            border-radius: 20px;
+            border-radius: 5px;
         }
 
-        #submit{
-            background-color: blue;
-            border-radius: 20px;
-            text-align:center;
+        .capsul span{
+            border: 1px solid black;
+            padding: 5px ;
+            border-radius: 10px;
+        }
+
+        .capsul{
+            padding: 0 34px  0 14px;
+        }
+
+        .button button{
+            border: none;
+            padding: 5px 110px;
+            border-radius: 15px;
+            background-color: rgb(140, 140, 201);
+        }
+
+        .button button:hover{
+            background-color: red;
+            color: aqua;
         }
     </style>
 </head>
 <body>
-    <div id="card">
+    <div class="card">
+        <div class="img">
+               <img src="image.png" width="234">
+        </div>
+  
 
-        <img src="./Screenshot 2025-05-04 180508.png" alt="" width="299" height="150" >
-         <div>
-            <span class="b1">
-                bottom
-            </span>
-
-            <span class="b1">
-                bottom
-            </span>
+    <div class="capsul">
+        <span>One</span>
+        <span>peice</span>
          </div>
-        <h1>lago di braies</h1>
+        <div class="content">
+            <h2>Heaeder</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Debitis facilis neque ipsa amet voluptatum officia ipsam accusamus modi id esse.</p>
+        </div>
+   <div class="button">
+        <button>Sail</button>
+      </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste! Porro neque quis accusamus, beatae vero pariatur fuga laboriosam eum.</p>
-         <!-- <label for="button">but</label>
-         <button>sumit</button> -->
+      </div>
 
-         <span id="submit">
-                submit
-         </span>
-    </div>
+      
 </body>
 </html>

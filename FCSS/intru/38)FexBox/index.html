@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;/*this will arange items in row wise one by one |||||||| */
+            height: 80vh;
+            justify-content: center; /*this will make content arrange in centere HRIZONTALLY of div*/
+            align-items: center;/* this will make content arrange in centere VERTICALLY of div ||this is 70% of times used */
+            justify-content: flex-end;
+            /* flex-direction: column; */
+            flex-wrap: wrap; /*this will stop overflow the new element come in next line*/
+            align-content:center ;/*if there more then one line then align content should be used*/
+
+            /* justify-items not there in flex box */
+
+            flex-flow: row wrap; /*this will control the derection content */
+
+            gap: 50px;
+            
+        }
+
+        .item{
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            background-color: blueviolet;
+            margin: 4px;
+
+            .order-1{
+                order: 1;
+            }
+            .order-2{
+                order: 2;
+            }
+            .order-2{
+                order: 2;
+            }
+
+            .item1{
+                flex-grow: 2;/*this will take 2* size of box*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item  item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <!--  <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> -->
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> 
+            <div class="item order-1">99</div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
